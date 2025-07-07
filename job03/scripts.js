@@ -1,4 +1,3 @@
-
 function leapYear(input) {
     let year = input;
     let answer;
