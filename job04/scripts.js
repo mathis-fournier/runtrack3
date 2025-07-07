@@ -7,6 +7,7 @@ function leapYear(input) {
         answer = "no";
     }
     console.log(answer);
+    alert(answer)
 }
 
 leapYear(prompt("Entrer une année"))
