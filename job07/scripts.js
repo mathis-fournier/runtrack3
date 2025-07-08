@@ -9,7 +9,7 @@ function jourtravaille(){
   } 
     else 
   {
-    console.log("jour travaillé");
+    console.warn("jour travaillé");
   }
 
 }
