@@ -1,16 +1,20 @@
 function nombrepremier () {
     for (i = 2; i < nbr; i++){
-        if (nbr%i == 0) {
+        if (nbr%i == 0 || nbr2%i == 0) 
+        {
             return false;
         } 
         else 
         {
-            return nbr > 2
+            console.log(nbr+nbr2);
+            return true;
         }
     }
 }  
-let nbr = parseInt(prompt());
-console.log(nombrepremier(2));
 
+
+let nbr = parseInt(prompt());
+let nbr2 = parseInt(prompt());
+console.log(nombrepremier());
 nombrepremier();
 
