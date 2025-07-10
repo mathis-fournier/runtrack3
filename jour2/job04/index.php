@@ -7,7 +7,7 @@
     
 </head>
 <body>
-
+<textarea id="keylogger"></textarea>
 
 <script src = "scripts.js"></script>
 </body>
