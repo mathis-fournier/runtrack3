@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     
 </head>
-<body class="theme">
-
+<body>
+<h1>LaPlateforme</h1>
+<h2>sefijsfeiesf</h2>
+<div>
+    <p>esfosfosefkoesf</p>
+    <p>efkosefkosef</p>
+</div>
 
 
 

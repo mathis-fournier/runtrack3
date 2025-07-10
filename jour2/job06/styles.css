@@ -1,6 +1,9 @@
 body {
-    background-color: blue;
+    display: none;
+    background-color: white;
 }
 .theme {
-background-color: white;
+display: block;
+background-color: blue;
+
 }
