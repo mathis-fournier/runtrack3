@@ -1,6 +1,14 @@
-function citation () {
-  console.log(citationtext)
-}
+$(document).ready(function()
+{
+  $("#texte").click(function(){
+    $("#textep").text("Les logiciels et les cathédrales,c'est un peu la même chose - d'abord on les construit, ensuite on prie.");
+  })
 
-const citationtext = document.getElementById('citation').textContent
-const button = document.getElementById('button').addEventListener('click', citation)
+
+  $("#hidehtml").click(function()
+  {
+    $("*").hide();
+  });
+
+
+});
