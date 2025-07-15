@@ -8,9 +8,6 @@
     <script src = "scripts.js"></script>
 </head>
 <body>
-    <button id="texte">Texte</button>
-    <p id="textep"></p>
-    <button id="hidehtml">HIDE</button>
 
 </body>
 </html>
