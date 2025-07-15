@@ -24,7 +24,7 @@ $(document).ready(function(){
   {
     
       $('ul').each(function(){
-            var $ul = $(this);
+              var $ul = $(this);
             var $liArr = $ul.children('li');
             console.log($liArr)
             $liArr.sort(function(a,b){
@@ -40,6 +40,7 @@ $(document).ready(function(){
 
   $("#gauche").click(function()
   {   
+    
   })
 
 
