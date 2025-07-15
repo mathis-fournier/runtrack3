@@ -1,13 +1,21 @@
-function jsonValueKey(json, key){
-}
+jQuery(document).ready(function($) {
 
-json = 
-{
-name: "La Plateforme_",
-address: "8 rue d'hozier",
-city: "Marseille",
-nb_staff: "11",
-creation:"2019"
-};
+    function jsonValueKey(json, key) {
+        return json[key]; 
+    }
 
-console.log(json.name);
+    var json = {
+        name: "La Plateforme_",
+        address: "8 rue d'hozier",
+        city: "Marseille",
+        nb_staff: "11",
+        creation: "2019"
+    };
+
+    var result = prompt("name, city, creation, adress, nb_staff");
+
+    var value = jsonValueKey(json, result);
+
+    console.log(value);
+
+});
