@@ -8,6 +8,7 @@
     <script src = "scripts.js"></script>
 </head>
 <body>
-
+<button id="button">Button</button>
+<p id="p"></p>
 </body>
 </html>
