@@ -7,10 +7,45 @@
     
 </head>
 <body>
+<button id="ID">Chercher par ID</button>
+<input
+  type="text"
+  id="IDinput"
+  name="name"
+  required
+  minlength="1"
+  maxlength="3"
+  size="10" />
 
 
-<button id = "button">button</button>
-<p id = compteur></p>
+
+<button id="name">Chercher par nom</button>
+<input
+  type="text"
+  id="NOMinput"
+  name="name"
+  required
+  minlength="1"
+  maxlength="25"
+  size="10" />
+
+
+
+<button id="type">Chercher par type</button>
+<select name="types" id="type-select">
+  <option value="">Choisir un type</option>
+  <option value="Fire">Fire</option>
+  <option value="Grass">Grass</option>
+  <option value="Poison">Poison</option>
+  <option value="Flying">Flying</option>
+</select>
+
+<button id="filtrer">Filtrer</button>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src = "scripts.js"></script>
 </body>
 </html>
