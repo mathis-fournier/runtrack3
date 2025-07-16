@@ -36,6 +36,7 @@ fetch("pokemon.json").then(
       )
 });
 
+
 $("#type").click(function(){
 let type = document.getElementById('type-select').value;
 fetch("pokemon.json").then(
