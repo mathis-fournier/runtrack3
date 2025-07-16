@@ -54,8 +54,7 @@ fetch("pokemon.json").then(
     }
   });
 });
-  
-    
+
 
 $("#filtrer").click(function(){
 let filtre1 = document.getElementById('NOMinput').value;
