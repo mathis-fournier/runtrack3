@@ -60,18 +60,42 @@ fetch("pokemon.json").then(
 $("#filtrer").click(function(){
 let filtre1 = document.getElementById('NOMinput').value;
 let filtre2 = document.getElementById('IDinput').value;
-let filtre3 = document.getElementById('type-select').value;
+let type = document.getElementById('type-select').value;
+
 fetch("pokemon.json").then(
       function(u){ return u.json();}
       ).then(
         function(json){
           jsondata = json;
-          var item = jsondata.find(item => item.name.english === filtre1 & item.id === parseInt(filtre2));
-          console.log(item.name);
-          console.log(item.type);
-          console.log("id :" + item.id);
-        }
-      )
+
+          const matchingPokemons = jsondata.filter(p =>
+        p.type.map(t => t.toLowerCase()).includes(type.toLowerCase()));
+        var item = jsondata.find(item => item.id === parseInt(filtre2));
+
+        var html = "";
+
+
+        if (matchingPokemons.length > 0)  {
+        console.log("Pokémons trouvés avec les filtres:", "id:" + filtre2 + type + filtre1 + ":");
+        matchingPokemons.forEach(p => {
+          try
+          {
+          if (p.id === item.id || undefined && p.name.english === item.name.english || undefined)
+          {
+          console.log(p.name.english + " (" + p.type.join(", ") + ")");
+          html="<td>"+p.name.english+"</td><td>"+p.id+"</td><td>"+p.type+"</td>";
+          document.getElementById('result').innerHTML+=html;
+          }
+          
+          } 
+          catch 
+          {
+            console.log(p.name.english + " (" + p.type.join(", ") + ")");
+          }
+
+        });
+    }
+  });
 });
 
 });

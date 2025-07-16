@@ -44,7 +44,18 @@
 
 
 
+<table style="border: 1px solid black; background-color: #D6EEEE;"> 
+    <tr>
+    <th>ID</th>
+    <th>Nom</th>
+    <th>Type</th>
+    </tr>
 
+    <tr>
+      <tbody id="result"></tbody>
+
+    </tr>
+</table>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src = "scripts.js"></script>
 </body>
