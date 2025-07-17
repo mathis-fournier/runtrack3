@@ -6,7 +6,7 @@
     <title>PHP MYSQL</title>
 </head>
 <body>
-<table>
+<table style="border: 1px solid black">
     <tr>
         <th>ID</th>
         <th>nom</th>
@@ -30,6 +30,8 @@ $result = $conn->query($sql);
 
 if (!$result) {
   die("Connection failed: " . mysqli_connect_error());
+} else {
+    echo "connecté a ", $servername;
 }
 
 if ($result->num_rows > 0){
