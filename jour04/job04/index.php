@@ -38,8 +38,10 @@ if (!$result) {
 if ($result->num_rows > 0){
     while($row = $result->fetch_assoc()) {
         echo "<tr><td>" . $row["id"] . "</td><td>" . $row["nom"] . "</td><td>" . $row["prenom"] . "</td><td>" . $row["email"] . "</td></tr>";
+
     }
 }
+
 
 ?>
 </table>
