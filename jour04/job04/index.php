@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>PHP MYSQL</title>
 </head>
 <body>
 <table>
@@ -13,9 +12,7 @@
         <th>nom</th>
         <th>prenom</th>
         <th>email</th>
-    </tr>
-
-    
+    </tr>    
 <?php 
 $servername = "127.0.0.1";
 $username = "root";
@@ -41,10 +38,10 @@ if ($result->num_rows > 0){
 
     }
 }
-
-
 ?>
 </table>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src = "scripts.js"></script>
 </body>
