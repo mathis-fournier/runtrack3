@@ -7,19 +7,7 @@
     
 </head>
 <body>
-<table style="background-color: #D6EEEE;"> 
-    <tr>
-    <th>ID</th>
-    <th>Nom</th>
-    <th>Type</th>
-    </tr>
 
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src = "scripts.js"></script>

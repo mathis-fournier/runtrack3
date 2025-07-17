@@ -56,12 +56,18 @@ fetch("pokemon.json").then(
   });
 });
 
-
-$("#filtrer").click(function(){
 let filtre1 = document.getElementById('NOMinput').value;
 let filtre2 = document.getElementById('IDinput').value;
 let type = document.getElementById('type-select').value;
 
+// async function fetchJson(){
+//   const response = await fetch("http://localhost/runtrack3/jour04/job03/pokemon.json")
+//   const content = await response.json();
+//   console.log(content);
+  
+//   const foundpokemon = json.find()
+// }
+// fetchJson();
 fetch("pokemon.json").then(
       function(u){ return u.json();}
       ).then(
@@ -70,7 +76,7 @@ fetch("pokemon.json").then(
 
           const matchingPokemons = jsondata.filter(p =>
         p.type.map(t => t.toLowerCase()).includes(type.toLowerCase()));
-        var item = jsondata.find(item => item.id === parseInt(filtre2));
+        const item = jsondata.find(item => item.id === parseInt(filtre2));
 
         var html = "";
 
@@ -80,10 +86,11 @@ fetch("pokemon.json").then(
         matchingPokemons.forEach(p => {
           try
           {
-          if (p.id === item.id || undefined && p.name.english === item.name.english || undefined)
+          if (p.name.english == item.name.english || undefined && p.id === item.id || undefined)
           {
+            
           console.log(p.name.english + " (" + p.type.join(", ") + ")");
-          html="<td>"+p.name.english+"</td><td>"+p.id+"</td><td>"+p.type+"</td>";
+          html="<td>"+p.id+"</td><td>"+p.name.english+"</td><td>"+p.type+"</td>";
           document.getElementById('result').innerHTML+=html;
           }
           
@@ -96,6 +103,10 @@ fetch("pokemon.json").then(
         });
     }
   });
-});
+
+
+
+
+
 
 });
