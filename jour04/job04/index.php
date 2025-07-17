@@ -17,7 +17,6 @@
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
-
 $conn = new mysqli($servername, $username, $password, 'utilisateurs');
 
 if (!$conn) {
@@ -26,7 +25,6 @@ if (!$conn) {
 
 $sql = "SELECT * FROM utilisateurs";
 $result = $conn->query($sql);
-
 
 if (!$result) {
   die("Connection failed: " . mysqli_connect_error());
@@ -42,7 +40,6 @@ if ($result->num_rows > 0){
 }
 ?>
 </table>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src = "scripts.js"></script>
